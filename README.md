@@ -27,7 +27,7 @@ This implementation does not include emotion modeling.
 6. creation of an inference script: do_syn.py (combined with [Waveglow](https://github.com/NVIDIA/waveglow), not described here)
 
 # Demo Page
-Visit our [demo page]() for video samples of our virtual avatar driven by audiovisual features predicted with AVTacotron2 and our proposed FastLips model. 
+Visit our [demo page](http://ssw2023.org/demo/FastLips/index.html) for video samples of our virtual avatar driven by audiovisual features predicted with AVTacotron2 and our proposed FastLips model. 
 
 # Quickstart
 
@@ -45,18 +45,22 @@ Visit our [demo page]() for video samples of our virtual avatar driven by audiov
 ## Training
 `python train.py --output_directory=outdir --log_directory=logdir`
 
+## Alternatively download our pretrained model
+Download and unzip the folder outputs_GIPSA from this [Google Drive repository](https://drive.google.com/drive/folders/1xTGZ4QUYZrDl3KLGQEtXbq05Z3yh9FMU?usp=sharing).
+
 ## Inference
 `python do_syn.py`
 
 # Acknowledgements
 This research has received funding from the BPI project THERADIA and MIAI@Grenoble-Alpes (ANR-19-P3IA-0003). This work was granted access to HPC/IDRIS under the allocation 2023-AD011011542R2 made by GENCI.
 
-<!-- # Citation
-    @inproceedings{lenglet2024fastlips,
-        title={FastLips: an End-to-End Audiovisual Text-to-Speech System with Lip Features Prediction for Virtual Avatars},
-        author={Lenglet, Martin and Perrotin, Olivier and Bailly, G{\'e}rard},
-        booktitle={Proc. of Interspeech},
-        pages={to be updated},
-        year={2024},
-        organization={ISCA}
-    } -->
+# Citation
+    @inproceedings{lenglet24_interspeech,
+      title     = {FastLips: an End-to-End Audiovisual Text-to-Speech System with Lip Features Prediction for Virtual Avatars},
+      author    = {Martin Lenglet and Olivier Perrotin and Gerard Bailly},
+      year      = {2024},
+      booktitle = {Interspeech 2024},
+      pages     = {3450--3454},
+      doi       = {10.21437/Interspeech.2024-462},
+      issn      = {2958-1796},
+    }
